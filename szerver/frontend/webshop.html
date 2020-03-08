@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link id="favicon" rel="icon" href="logo.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="webshop.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lora|Raleway&display=swap" rel="stylesheet"> 
+        <script type=text/javascript src="webshop.js"></script>
+        <script type=text/javascript src="admin.js"></script>
+        <script type=text/javascript src="ujdonsag.js"></script>
+        <script type=text/javascript src="elerhetoseg.js"></script>
+        <script type=text/javascript src="termekek.js"></script>
+        <title>WebShop</title>
+    </head>
+    <body>
+        <div class="index" id="index">
+            <div id="logocontainer" class="logocontainer"></div>
+        </div>
+        
+        <div class="screen">
+            <div class="menu">
+                <div class="menuEntry" id="ujdonsag" onclick="selectButton('ujdonsag')">Újdonságok,<br> kedvezmények</div>
+                <div class="menuEntry" id="kesz" onclick="selectButton('kesz')">Kész termékek</div>
+                <div class="menuEntry" id="egyedi" onclick="selectButton('egyedi')">Rendelj egyedit!</div>
+                <div class="menuEntry" id="elerhetoseg" onclick="selectButton('elerhetoseg')">Kapcsolat</div>
+                   <!--  Ezek a menüpontok csak az admin felületen fognak látszani. -->
+                <div class="menuEntry" id="upload" onclick="selectButton('upload')">Feltöltés</div>  
+                <div class="menuEntry" id="uploadnews" onclick="selectButton('uploadnews')">Cikk hozzáadása</div>
+            </div>
+
+            <div id="actualpage" class="actualpage" style="height: 1000px">
+                <h1 id="title" >Újdonságok, kedvezmények</h1>
+                <div id="pagecontent" class="pagecontent">
+                </div>
+            </div>
+        </div>
+        <div class="previewBackground">
+            <div class="previewWindow"> </div>
+        </div> 
+    </body>
+</html>

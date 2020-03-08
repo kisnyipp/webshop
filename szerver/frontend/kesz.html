@@ -1,0 +1,21 @@
+<div class="newscontainer">
+  <div class="pageHeader">
+    <div class="pageButtons"></div>
+    <select id="changeOrder" autofocus="mostPopular"> 
+      <option value="filename desc">Legfrissebb elöl</option>
+      <option value="filename asc">Legrégebbi elöl</option>
+      <option value="viewed desc">Legnépszerűbb elöl</option>
+      <option value="viewed asc">Legnépszerűbb hátul</option>
+      <option value="price desc">Legdrágább elöl</option>
+      <option value="price asc">Legolcsóbb elöl</option>
+      <option value="name asc">Név szerint: A-Z</option>
+      <option value="name desc">Név szerint: Z-A</option>
+    </select>
+    <div>
+        <input type="text" id="search" placeholder="Keresés...">
+        <input type="button" value="Keres!" onclick="addKeyword(document.getElementById('search').value)"> 
+    </div> 
+    <input type="button" value="Szűrők eltávolítása" onclick="removeAllKeywords()">
+  </div>
+  <div id="productContainer"></div>
+</div>

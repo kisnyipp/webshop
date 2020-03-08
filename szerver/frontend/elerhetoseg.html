@@ -1,0 +1,32 @@
+
+
+<div class="addresscontainer">
+    <h1>Kapcsolat</h1>
+    <h4>Telefon</h4>
+    <p>20/123 45 67</p>
+    
+    <div>
+        <h4>Üzenj nekem!</h4>
+            <p>Ha kérdésed van, vagy e-mailben szeretnél rendelni, vedd fel velem a kapcsolatot itt.</p>
+        <form >
+            <p>Név</p>
+            <p id="nameError" class=errText>Kérlek, add meg a neved!</p>
+            <input type="text"  name="Name" placeholder="Név" id="mailName">
+            <p>E-mail cím</p>
+            <p id="addressError" class=errText>Hibás e-mail cím!</p>
+            <input type="text" id="mailAddress"  placeholder="E-mail">
+            <p>Üzenet</p>
+            <p id="textError" class=errText>Írj be üzenetet!</p>
+            <textarea  type="text" id="mailText" placeholder="Üzenet szövege"></textarea>
+            <p>Kérlek ellenőrizd, hogy az e-mail címedet pontosan adtad-e meg, mert a választ erre fogod kapni.</p>
+            <p> <input type="checkbox" id="mailcopy">
+            <label for="mailcopy">Kérek másolatot az e-mailről</label> </p>
+            <input type="button" value="Küldés!"  onclick="checkEmail()">
+        </form>
+        <a href="https://www.facebook.com/" target="_blank"><img class="icon" src="icon_facebook.png"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="icon_insta.png"></a>
+        <a href="https://hu.pinterest.com/" target="_blank"><img class="icon" src="icon_pinterest.png"></a>
+    </div>
+</div>
+    
+                            
